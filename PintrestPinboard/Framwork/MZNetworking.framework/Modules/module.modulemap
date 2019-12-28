@@ -1,0 +1,11 @@
+framework module MZNetworking {
+  umbrella header "MZNetworking.h"
+
+  export *
+  module * { export * }
+}
+
+module MZNetworking.Swift {
+    header "MZNetworking-Swift.h"
+    requires objc
+}

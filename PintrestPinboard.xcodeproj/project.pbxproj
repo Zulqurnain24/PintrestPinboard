@@ -1,0 +1,883 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6641DD5A23B78B6500665419 /* PinterestPinboardTests_SplashScreenViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6641DD5923B78B6500665419 /* PinterestPinboardTests_SplashScreenViewControllerTest.swift */; };
+		6641DD5C23B78C4200665419 /* PinterestPinboardTests_PinboardListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6641DD5B23B78C4200665419 /* PinterestPinboardTests_PinboardListViewControllerTests.swift */; };
+		66725AAC23B20910003C9280 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66725AAB23B20910003C9280 /* AppDelegate.swift */; };
+		66725AAE23B20910003C9280 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66725AAD23B20910003C9280 /* SceneDelegate.swift */; };
+		66725AB023B20910003C9280 /* PinboardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66725AAF23B20910003C9280 /* PinboardListViewController.swift */; };
+		66725AB323B20910003C9280 /* PinboardList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66725AB123B20910003C9280 /* PinboardList.storyboard */; };
+		66725AB523B20911003C9280 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66725AB423B20911003C9280 /* Assets.xcassets */; };
+		66725AB823B20911003C9280 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66725AB623B20911003C9280 /* LaunchScreen.storyboard */; };
+		66725ACE23B20912003C9280 /* PintrestPinboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66725ACD23B20912003C9280 /* PintrestPinboardUITests.swift */; };
+		66A6DC1D23B7824000190EAF /* PinterestPinboardTests_PinboardListCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6DC1C23B7824000190EAF /* PinterestPinboardTests_PinboardListCollectionViewCellTests.swift */; };
+		66C6D94E23B214ED00F840D0 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6D94D23B214ED00F840D0 /* UIImageExtension.swift */; };
+		66C6D95023B2150300F840D0 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6D94F23B2150300F840D0 /* UIScrollViewExtension.swift */; };
+		66C6D95323B2154000F840D0 /* PinboardListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6D95223B2154000F840D0 /* PinboardListService.swift */; };
+		66C6D95523B2154D00F840D0 /* PinboardListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6D95423B2154D00F840D0 /* PinboardListRequest.swift */; };
+		66C6D95723B2155B00F840D0 /* PinboardnImageDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6D95623B2155B00F840D0 /* PinboardnImageDownloadService.swift */; };
+		66C6D95923B2156A00F840D0 /* PinboardnImageDownloadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6D95823B2156A00F840D0 /* PinboardnImageDownloadRequest.swift */; };
+		66C6D95B23B215A000F840D0 /* PinboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6D95A23B215A000F840D0 /* PinboardItem.swift */; };
+		66C6D95D23B215AB00F840D0 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6D95C23B215AB00F840D0 /* Categories.swift */; };
+		66C6D95F23B215B900F840D0 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6D95E23B215B900F840D0 /* Links.swift */; };
+		66C6D96123B215C300F840D0 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6D96023B215C300F840D0 /* ProfileImage.swift */; };
+		66C6D96323B215DB00F840D0 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6D96223B215DB00F840D0 /* Urls.swift */; };
+		66C6D96523B2161300F840D0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6D96423B2161300F840D0 /* User.swift */; };
+		66C6D96A23B216AD00F840D0 /* PinboardListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6D96823B216AD00F840D0 /* PinboardListCollectionViewCell.swift */; };
+		66D45ECB23B7369500E654EC /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D45ECA23B7369500E654EC /* SplashScreenViewController.swift */; };
+		66D45ECD23B749D600E654EC /* PinterestPinboardTests_ConstantsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D45ECC23B749D600E654EC /* PinterestPinboardTests_ConstantsTest.swift */; };
+		66D45ECF23B74A1300E654EC /* PinterestPinboardTests_PinBoardCustomLayoutTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D45ECE23B74A1300E654EC /* PinterestPinboardTests_PinBoardCustomLayoutTest.swift */; };
+		66D45ED123B74A3500E654EC /* PinterestPinboardTests_UIImageExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D45ED023B74A3500E654EC /* PinterestPinboardTests_UIImageExtensionTest.swift */; };
+		66D45ED323B74A6C00E654EC /* PinterestPinboardTests_ScrollViewExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D45ED223B74A6C00E654EC /* PinterestPinboardTests_ScrollViewExtensionTest.swift */; };
+		66D45ED523B74A9300E654EC /* PinterestPinboardTests_PinboardListServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D45ED423B74A9300E654EC /* PinterestPinboardTests_PinboardListServiceTest.swift */; };
+		66D45ED723B74AFC00E654EC /* PintrestPinboardTests_PinboardListRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D45ED623B74AFC00E654EC /* PintrestPinboardTests_PinboardListRequestTest.swift */; };
+		66D45ED923B74B2A00E654EC /* PintrestPinboardTests_PinboardImageDownloadServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D45ED823B74B2A00E654EC /* PintrestPinboardTests_PinboardImageDownloadServiceTest.swift */; };
+		66D45EDB23B74B4300E654EC /* PintrestPinboardTests_PinboardImageDownloadRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D45EDA23B74B4300E654EC /* PintrestPinboardTests_PinboardImageDownloadRequestTest.swift */; };
+		66D45EDD23B74B9000E654EC /* PintrestPinboardTest_PinboardItemTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D45EDC23B74B9000E654EC /* PintrestPinboardTest_PinboardItemTest.swift */; };
+		66D45EDF23B74BF700E654EC /* PintrestPinboardTests_CategoriesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D45EDE23B74BF700E654EC /* PintrestPinboardTests_CategoriesTest.swift */; };
+		66D45EE123B74C1300E654EC /* PinterestPinboardTest_LinksTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D45EE023B74C1300E654EC /* PinterestPinboardTest_LinksTest.swift */; };
+		66D45EE323B74C3000E654EC /* PinterestPinboardTests_ProfileImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D45EE223B74C3000E654EC /* PinterestPinboardTests_ProfileImageTest.swift */; };
+		66D45EE523B74C6300E654EC /* PinterestPinboardTests_UserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D45EE423B74C6300E654EC /* PinterestPinboardTests_UserTest.swift */; };
+		66D45EE723B74C9D00E654EC /* PinterestPinboardTest_UrlsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D45EE623B74C9D00E654EC /* PinterestPinboardTest_UrlsTest.swift */; };
+		66E2035723B69CB5003B2226 /* MZCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E2035523B69AD7003B2226 /* MZCache.framework */; };
+		66E2035823B69CB5003B2226 /* MZCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66E2035523B69AD7003B2226 /* MZCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66E2035A23B69CB7003B2226 /* MZNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6667FFDD23B5F4EB00BC04BC /* MZNetworking.framework */; };
+		66E2035B23B69CB7003B2226 /* MZNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6667FFDD23B5F4EB00BC04BC /* MZNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66E2035E23B69E83003B2226 /* PinBoardCustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E2035D23B69E83003B2226 /* PinBoardCustomLayout.swift */; };
+		66E2036123B6A1C8003B2226 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E2036023B6A1C8003B2226 /* Constants.swift */; };
+		66E2036523B6A2FB003B2226 /* SplashScreenImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E2036323B6A2FB003B2226 /* SplashScreenImageView.xib */; };
+		66E2036623B6A2FB003B2226 /* SplashScreenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E2036423B6A2FB003B2226 /* SplashScreenImageView.swift */; };
+		66E2036823B6A893003B2226 /* PinboardListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E2036723B6A893003B2226 /* PinboardListCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66725ABF23B20912003C9280 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66725AA023B20910003C9280 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66725AA723B20910003C9280;
+			remoteInfo = PintrestPinboard;
+		};
+		66725ACA23B20912003C9280 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66725AA023B20910003C9280 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66725AA723B20910003C9280;
+			remoteInfo = PintrestPinboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		66E2035923B69CB5003B2226 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				66E2035823B69CB5003B2226 /* MZCache.framework in Embed Frameworks */,
+				66E2035B23B69CB7003B2226 /* MZNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6641DD5923B78B6500665419 /* PinterestPinboardTests_SplashScreenViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestPinboardTests_SplashScreenViewControllerTest.swift; sourceTree = "<group>"; };
+		6641DD5B23B78C4200665419 /* PinterestPinboardTests_PinboardListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestPinboardTests_PinboardListViewControllerTests.swift; sourceTree = "<group>"; };
+		6667FFDD23B5F4EB00BC04BC /* MZNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MZNetworking.framework; sourceTree = "<group>"; };
+		66725AA823B20910003C9280 /* PintrestPinboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PintrestPinboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66725AAB23B20910003C9280 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66725AAD23B20910003C9280 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		66725AAF23B20910003C9280 /* PinboardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinboardListViewController.swift; sourceTree = "<group>"; };
+		66725AB223B20910003C9280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PinboardList.storyboard; sourceTree = "<group>"; };
+		66725AB423B20911003C9280 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66725AB723B20911003C9280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66725AB923B20911003C9280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66725ABE23B20912003C9280 /* PintrestPinboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PintrestPinboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66725AC423B20912003C9280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66725AC923B20912003C9280 /* PintrestPinboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PintrestPinboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66725ACD23B20912003C9280 /* PintrestPinboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintrestPinboardUITests.swift; sourceTree = "<group>"; };
+		66725ACF23B20912003C9280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66A6DC1C23B7824000190EAF /* PinterestPinboardTests_PinboardListCollectionViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestPinboardTests_PinboardListCollectionViewCellTests.swift; sourceTree = "<group>"; };
+		66C6D94D23B214ED00F840D0 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		66C6D94F23B2150300F840D0 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
+		66C6D95223B2154000F840D0 /* PinboardListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinboardListService.swift; sourceTree = "<group>"; };
+		66C6D95423B2154D00F840D0 /* PinboardListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinboardListRequest.swift; sourceTree = "<group>"; };
+		66C6D95623B2155B00F840D0 /* PinboardnImageDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinboardnImageDownloadService.swift; sourceTree = "<group>"; };
+		66C6D95823B2156A00F840D0 /* PinboardnImageDownloadRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinboardnImageDownloadRequest.swift; sourceTree = "<group>"; };
+		66C6D95A23B215A000F840D0 /* PinboardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinboardItem.swift; sourceTree = "<group>"; };
+		66C6D95C23B215AB00F840D0 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		66C6D95E23B215B900F840D0 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		66C6D96023B215C300F840D0 /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
+		66C6D96223B215DB00F840D0 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		66C6D96423B2161300F840D0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		66C6D96823B216AD00F840D0 /* PinboardListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinboardListCollectionViewCell.swift; sourceTree = "<group>"; };
+		66D45ECA23B7369500E654EC /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		66D45ECC23B749D600E654EC /* PinterestPinboardTests_ConstantsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestPinboardTests_ConstantsTest.swift; sourceTree = "<group>"; };
+		66D45ECE23B74A1300E654EC /* PinterestPinboardTests_PinBoardCustomLayoutTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestPinboardTests_PinBoardCustomLayoutTest.swift; sourceTree = "<group>"; };
+		66D45ED023B74A3500E654EC /* PinterestPinboardTests_UIImageExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestPinboardTests_UIImageExtensionTest.swift; sourceTree = "<group>"; };
+		66D45ED223B74A6C00E654EC /* PinterestPinboardTests_ScrollViewExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestPinboardTests_ScrollViewExtensionTest.swift; sourceTree = "<group>"; };
+		66D45ED423B74A9300E654EC /* PinterestPinboardTests_PinboardListServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestPinboardTests_PinboardListServiceTest.swift; sourceTree = "<group>"; };
+		66D45ED623B74AFC00E654EC /* PintrestPinboardTests_PinboardListRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintrestPinboardTests_PinboardListRequestTest.swift; sourceTree = "<group>"; };
+		66D45ED823B74B2A00E654EC /* PintrestPinboardTests_PinboardImageDownloadServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintrestPinboardTests_PinboardImageDownloadServiceTest.swift; sourceTree = "<group>"; };
+		66D45EDA23B74B4300E654EC /* PintrestPinboardTests_PinboardImageDownloadRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintrestPinboardTests_PinboardImageDownloadRequestTest.swift; sourceTree = "<group>"; };
+		66D45EDC23B74B9000E654EC /* PintrestPinboardTest_PinboardItemTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintrestPinboardTest_PinboardItemTest.swift; sourceTree = "<group>"; };
+		66D45EDE23B74BF700E654EC /* PintrestPinboardTests_CategoriesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintrestPinboardTests_CategoriesTest.swift; sourceTree = "<group>"; };
+		66D45EE023B74C1300E654EC /* PinterestPinboardTest_LinksTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestPinboardTest_LinksTest.swift; sourceTree = "<group>"; };
+		66D45EE223B74C3000E654EC /* PinterestPinboardTests_ProfileImageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestPinboardTests_ProfileImageTest.swift; sourceTree = "<group>"; };
+		66D45EE423B74C6300E654EC /* PinterestPinboardTests_UserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestPinboardTests_UserTest.swift; sourceTree = "<group>"; };
+		66D45EE623B74C9D00E654EC /* PinterestPinboardTest_UrlsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestPinboardTest_UrlsTest.swift; sourceTree = "<group>"; };
+		66E2035523B69AD7003B2226 /* MZCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MZCache.framework; sourceTree = "<group>"; };
+		66E2035D23B69E83003B2226 /* PinBoardCustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinBoardCustomLayout.swift; sourceTree = "<group>"; };
+		66E2036023B6A1C8003B2226 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		66E2036323B6A2FB003B2226 /* SplashScreenImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashScreenImageView.xib; sourceTree = "<group>"; };
+		66E2036423B6A2FB003B2226 /* SplashScreenImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenImageView.swift; sourceTree = "<group>"; };
+		66E2036723B6A893003B2226 /* PinboardListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PinboardListCollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66725AA523B20910003C9280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66E2035723B69CB5003B2226 /* MZCache.framework in Frameworks */,
+				66E2035A23B69CB7003B2226 /* MZNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66725ABB23B20912003C9280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66725AC623B20912003C9280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6667FFD523B5F41000BC04BC /* Framwork */ = {
+			isa = PBXGroup;
+			children = (
+				66E2035523B69AD7003B2226 /* MZCache.framework */,
+				6667FFDD23B5F4EB00BC04BC /* MZNetworking.framework */,
+			);
+			path = Framwork;
+			sourceTree = "<group>";
+		};
+		66725A9F23B20910003C9280 = {
+			isa = PBXGroup;
+			children = (
+				66725AAA23B20910003C9280 /* PintrestPinboard */,
+				66725AC123B20912003C9280 /* PintrestPinboardTests */,
+				66725ACC23B20912003C9280 /* PintrestPinboardUITests */,
+				66725AA923B20910003C9280 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66725AA923B20910003C9280 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66725AA823B20910003C9280 /* PintrestPinboard.app */,
+				66725ABE23B20912003C9280 /* PintrestPinboardTests.xctest */,
+				66725AC923B20912003C9280 /* PintrestPinboardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66725AAA23B20910003C9280 /* PintrestPinboard */ = {
+			isa = PBXGroup;
+			children = (
+				66E2035F23B6A1B4003B2226 /* Utility */,
+				66E2035C23B69E66003B2226 /* Custom Components */,
+				6667FFD523B5F41000BC04BC /* Framwork */,
+				66C6D94C23B214C700F840D0 /* Extension */,
+				66C6D95123B2150E00F840D0 /* Service */,
+				66C6D94B23B214BE00F840D0 /* Models */,
+				66C6D94A23B214A200F840D0 /* Resources */,
+				66C6D94923B2149800F840D0 /* Scenes */,
+				66C6D94823B2143500F840D0 /* App Config */,
+				66725AB623B20911003C9280 /* LaunchScreen.storyboard */,
+				66725AB923B20911003C9280 /* Info.plist */,
+			);
+			path = PintrestPinboard;
+			sourceTree = "<group>";
+		};
+		66725AC123B20912003C9280 /* PintrestPinboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				66725AC423B20912003C9280 /* Info.plist */,
+				66D45ECC23B749D600E654EC /* PinterestPinboardTests_ConstantsTest.swift */,
+				66D45ECE23B74A1300E654EC /* PinterestPinboardTests_PinBoardCustomLayoutTest.swift */,
+				66D45ED023B74A3500E654EC /* PinterestPinboardTests_UIImageExtensionTest.swift */,
+				66D45ED223B74A6C00E654EC /* PinterestPinboardTests_ScrollViewExtensionTest.swift */,
+				66D45ED423B74A9300E654EC /* PinterestPinboardTests_PinboardListServiceTest.swift */,
+				66D45ED623B74AFC00E654EC /* PintrestPinboardTests_PinboardListRequestTest.swift */,
+				66D45ED823B74B2A00E654EC /* PintrestPinboardTests_PinboardImageDownloadServiceTest.swift */,
+				66D45EDA23B74B4300E654EC /* PintrestPinboardTests_PinboardImageDownloadRequestTest.swift */,
+				66D45EDC23B74B9000E654EC /* PintrestPinboardTest_PinboardItemTest.swift */,
+				66D45EDE23B74BF700E654EC /* PintrestPinboardTests_CategoriesTest.swift */,
+				66D45EE023B74C1300E654EC /* PinterestPinboardTest_LinksTest.swift */,
+				66D45EE223B74C3000E654EC /* PinterestPinboardTests_ProfileImageTest.swift */,
+				66D45EE423B74C6300E654EC /* PinterestPinboardTests_UserTest.swift */,
+				66D45EE623B74C9D00E654EC /* PinterestPinboardTest_UrlsTest.swift */,
+				66A6DC1C23B7824000190EAF /* PinterestPinboardTests_PinboardListCollectionViewCellTests.swift */,
+				6641DD5923B78B6500665419 /* PinterestPinboardTests_SplashScreenViewControllerTest.swift */,
+				6641DD5B23B78C4200665419 /* PinterestPinboardTests_PinboardListViewControllerTests.swift */,
+			);
+			path = PintrestPinboardTests;
+			sourceTree = "<group>";
+		};
+		66725ACC23B20912003C9280 /* PintrestPinboardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				66725ACD23B20912003C9280 /* PintrestPinboardUITests.swift */,
+				66725ACF23B20912003C9280 /* Info.plist */,
+			);
+			path = PintrestPinboardUITests;
+			sourceTree = "<group>";
+		};
+		66C6D94823B2143500F840D0 /* App Config */ = {
+			isa = PBXGroup;
+			children = (
+				66725AAD23B20910003C9280 /* SceneDelegate.swift */,
+				66725AAB23B20910003C9280 /* AppDelegate.swift */,
+			);
+			path = "App Config";
+			sourceTree = "<group>";
+		};
+		66C6D94923B2149800F840D0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				66C6D96623B2166000F840D0 /* UI */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		66C6D94A23B214A200F840D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				66725AB423B20911003C9280 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		66C6D94B23B214BE00F840D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				66C6D95A23B215A000F840D0 /* PinboardItem.swift */,
+				66C6D95C23B215AB00F840D0 /* Categories.swift */,
+				66C6D96023B215C300F840D0 /* ProfileImage.swift */,
+				66C6D95E23B215B900F840D0 /* Links.swift */,
+				66C6D96423B2161300F840D0 /* User.swift */,
+				66C6D96223B215DB00F840D0 /* Urls.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		66C6D94C23B214C700F840D0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				66C6D94D23B214ED00F840D0 /* UIImageExtension.swift */,
+				66C6D94F23B2150300F840D0 /* UIScrollViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		66C6D95123B2150E00F840D0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				66C6D95223B2154000F840D0 /* PinboardListService.swift */,
+				66C6D95423B2154D00F840D0 /* PinboardListRequest.swift */,
+				66C6D95623B2155B00F840D0 /* PinboardnImageDownloadService.swift */,
+				66C6D95823B2156A00F840D0 /* PinboardnImageDownloadRequest.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		66C6D96623B2166000F840D0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				66D45EC923B735CB00E654EC /* Storyboard */,
+				66D45EC823B735BC00E654EC /* ViewControllers */,
+				66E2036223B6A2C3003B2226 /* AnimationView */,
+				66C6D96723B2166D00F840D0 /* PinboardListingCell */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		66C6D96723B2166D00F840D0 /* PinboardListingCell */ = {
+			isa = PBXGroup;
+			children = (
+				66C6D96823B216AD00F840D0 /* PinboardListCollectionViewCell.swift */,
+				66E2036723B6A893003B2226 /* PinboardListCollectionViewCell.xib */,
+			);
+			path = PinboardListingCell;
+			sourceTree = "<group>";
+		};
+		66D45EC823B735BC00E654EC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				66725AAF23B20910003C9280 /* PinboardListViewController.swift */,
+				66D45ECA23B7369500E654EC /* SplashScreenViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		66D45EC923B735CB00E654EC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				66725AB123B20910003C9280 /* PinboardList.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		66E2035C23B69E66003B2226 /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				66E2035D23B69E83003B2226 /* PinBoardCustomLayout.swift */,
+			);
+			path = "Custom Components";
+			sourceTree = "<group>";
+		};
+		66E2035F23B6A1B4003B2226 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				66E2036023B6A1C8003B2226 /* Constants.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		66E2036223B6A2C3003B2226 /* AnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				66E2036423B6A2FB003B2226 /* SplashScreenImageView.swift */,
+				66E2036323B6A2FB003B2226 /* SplashScreenImageView.xib */,
+			);
+			path = AnimationView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66725AA723B20910003C9280 /* PintrestPinboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66725AD223B20912003C9280 /* Build configuration list for PBXNativeTarget "PintrestPinboard" */;
+			buildPhases = (
+				66725AA423B20910003C9280 /* Sources */,
+				66725AA523B20910003C9280 /* Frameworks */,
+				66725AA623B20910003C9280 /* Resources */,
+				66E2035923B69CB5003B2226 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PintrestPinboard;
+			productName = PintrestPinboard;
+			productReference = 66725AA823B20910003C9280 /* PintrestPinboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66725ABD23B20912003C9280 /* PintrestPinboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66725AD523B20912003C9280 /* Build configuration list for PBXNativeTarget "PintrestPinboardTests" */;
+			buildPhases = (
+				66725ABA23B20912003C9280 /* Sources */,
+				66725ABB23B20912003C9280 /* Frameworks */,
+				66725ABC23B20912003C9280 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66725AC023B20912003C9280 /* PBXTargetDependency */,
+			);
+			name = PintrestPinboardTests;
+			productName = PintrestPinboardTests;
+			productReference = 66725ABE23B20912003C9280 /* PintrestPinboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		66725AC823B20912003C9280 /* PintrestPinboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66725AD823B20912003C9280 /* Build configuration list for PBXNativeTarget "PintrestPinboardUITests" */;
+			buildPhases = (
+				66725AC523B20912003C9280 /* Sources */,
+				66725AC623B20912003C9280 /* Frameworks */,
+				66725AC723B20912003C9280 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66725ACB23B20912003C9280 /* PBXTargetDependency */,
+			);
+			name = PintrestPinboardUITests;
+			productName = PintrestPinboardUITests;
+			productReference = 66725AC923B20912003C9280 /* PintrestPinboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66725AA023B20910003C9280 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Mohammad Zulqarnain";
+				TargetAttributes = {
+					66725AA723B20910003C9280 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					66725ABD23B20912003C9280 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 66725AA723B20910003C9280;
+					};
+					66725AC823B20912003C9280 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 66725AA723B20910003C9280;
+					};
+				};
+			};
+			buildConfigurationList = 66725AA323B20910003C9280 /* Build configuration list for PBXProject "PintrestPinboard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66725A9F23B20910003C9280;
+			productRefGroup = 66725AA923B20910003C9280 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66725AA723B20910003C9280 /* PintrestPinboard */,
+				66725ABD23B20912003C9280 /* PintrestPinboardTests */,
+				66725AC823B20912003C9280 /* PintrestPinboardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66725AA623B20910003C9280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66725AB823B20911003C9280 /* LaunchScreen.storyboard in Resources */,
+				66E2036823B6A893003B2226 /* PinboardListCollectionViewCell.xib in Resources */,
+				66725AB523B20911003C9280 /* Assets.xcassets in Resources */,
+				66725AB323B20910003C9280 /* PinboardList.storyboard in Resources */,
+				66E2036523B6A2FB003B2226 /* SplashScreenImageView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66725ABC23B20912003C9280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66725AC723B20912003C9280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66725AA423B20910003C9280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C6D95723B2155B00F840D0 /* PinboardnImageDownloadService.swift in Sources */,
+				66E2035E23B69E83003B2226 /* PinBoardCustomLayout.swift in Sources */,
+				66C6D96A23B216AD00F840D0 /* PinboardListCollectionViewCell.swift in Sources */,
+				66C6D95023B2150300F840D0 /* UIScrollViewExtension.swift in Sources */,
+				66725AB023B20910003C9280 /* PinboardListViewController.swift in Sources */,
+				66C6D96123B215C300F840D0 /* ProfileImage.swift in Sources */,
+				66C6D95B23B215A000F840D0 /* PinboardItem.swift in Sources */,
+				66C6D96323B215DB00F840D0 /* Urls.swift in Sources */,
+				66725AAC23B20910003C9280 /* AppDelegate.swift in Sources */,
+				66C6D95523B2154D00F840D0 /* PinboardListRequest.swift in Sources */,
+				66C6D96523B2161300F840D0 /* User.swift in Sources */,
+				66E2036623B6A2FB003B2226 /* SplashScreenImageView.swift in Sources */,
+				66C6D95D23B215AB00F840D0 /* Categories.swift in Sources */,
+				66C6D95F23B215B900F840D0 /* Links.swift in Sources */,
+				66725AAE23B20910003C9280 /* SceneDelegate.swift in Sources */,
+				66C6D95323B2154000F840D0 /* PinboardListService.swift in Sources */,
+				66C6D95923B2156A00F840D0 /* PinboardnImageDownloadRequest.swift in Sources */,
+				66C6D94E23B214ED00F840D0 /* UIImageExtension.swift in Sources */,
+				66D45ECB23B7369500E654EC /* SplashScreenViewController.swift in Sources */,
+				66E2036123B6A1C8003B2226 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66725ABA23B20912003C9280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D45ED923B74B2A00E654EC /* PintrestPinboardTests_PinboardImageDownloadServiceTest.swift in Sources */,
+				66D45ED523B74A9300E654EC /* PinterestPinboardTests_PinboardListServiceTest.swift in Sources */,
+				66D45EDB23B74B4300E654EC /* PintrestPinboardTests_PinboardImageDownloadRequestTest.swift in Sources */,
+				66D45EDD23B74B9000E654EC /* PintrestPinboardTest_PinboardItemTest.swift in Sources */,
+				66D45EE523B74C6300E654EC /* PinterestPinboardTests_UserTest.swift in Sources */,
+				66D45ED723B74AFC00E654EC /* PintrestPinboardTests_PinboardListRequestTest.swift in Sources */,
+				66D45ED123B74A3500E654EC /* PinterestPinboardTests_UIImageExtensionTest.swift in Sources */,
+				66D45EE123B74C1300E654EC /* PinterestPinboardTest_LinksTest.swift in Sources */,
+				66D45EDF23B74BF700E654EC /* PintrestPinboardTests_CategoriesTest.swift in Sources */,
+				66A6DC1D23B7824000190EAF /* PinterestPinboardTests_PinboardListCollectionViewCellTests.swift in Sources */,
+				6641DD5C23B78C4200665419 /* PinterestPinboardTests_PinboardListViewControllerTests.swift in Sources */,
+				66D45EE723B74C9D00E654EC /* PinterestPinboardTest_UrlsTest.swift in Sources */,
+				66D45EE323B74C3000E654EC /* PinterestPinboardTests_ProfileImageTest.swift in Sources */,
+				66D45ED323B74A6C00E654EC /* PinterestPinboardTests_ScrollViewExtensionTest.swift in Sources */,
+				66D45ECD23B749D600E654EC /* PinterestPinboardTests_ConstantsTest.swift in Sources */,
+				66D45ECF23B74A1300E654EC /* PinterestPinboardTests_PinBoardCustomLayoutTest.swift in Sources */,
+				6641DD5A23B78B6500665419 /* PinterestPinboardTests_SplashScreenViewControllerTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66725AC523B20912003C9280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66725ACE23B20912003C9280 /* PintrestPinboardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66725AC023B20912003C9280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66725AA723B20910003C9280 /* PintrestPinboard */;
+			targetProxy = 66725ABF23B20912003C9280 /* PBXContainerItemProxy */;
+		};
+		66725ACB23B20912003C9280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66725AA723B20910003C9280 /* PintrestPinboard */;
+			targetProxy = 66725ACA23B20912003C9280 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66725AB123B20910003C9280 /* PinboardList.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66725AB223B20910003C9280 /* Base */,
+			);
+			name = PinboardList.storyboard;
+			sourceTree = "<group>";
+		};
+		66725AB623B20911003C9280 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66725AB723B20911003C9280 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66725AD023B20912003C9280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		66725AD123B20912003C9280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66725AD323B20912003C9280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8S58D25632;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PintrestPinboard/Framwork",
+				);
+				INFOPLIST_FILE = PintrestPinboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.binary.leaf.PintrestPinboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66725AD423B20912003C9280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8S58D25632;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PintrestPinboard/Framwork",
+				);
+				INFOPLIST_FILE = PintrestPinboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.binary.leaf.PintrestPinboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		66725AD623B20912003C9280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8S58D25632;
+				INFOPLIST_FILE = PintrestPinboardTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.binary.leaf.PintrestPinboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PintrestPinboard.app/PintrestPinboard";
+			};
+			name = Debug;
+		};
+		66725AD723B20912003C9280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8S58D25632;
+				INFOPLIST_FILE = PintrestPinboardTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.binary.leaf.PintrestPinboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PintrestPinboard.app/PintrestPinboard";
+			};
+			name = Release;
+		};
+		66725AD923B20912003C9280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8S58D25632;
+				INFOPLIST_FILE = PintrestPinboardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.binary.leaf.PintrestPinboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PintrestPinboard;
+			};
+			name = Debug;
+		};
+		66725ADA23B20912003C9280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8S58D25632;
+				INFOPLIST_FILE = PintrestPinboardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.binary.leaf.PintrestPinboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PintrestPinboard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66725AA323B20910003C9280 /* Build configuration list for PBXProject "PintrestPinboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66725AD023B20912003C9280 /* Debug */,
+				66725AD123B20912003C9280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66725AD223B20912003C9280 /* Build configuration list for PBXNativeTarget "PintrestPinboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66725AD323B20912003C9280 /* Debug */,
+				66725AD423B20912003C9280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66725AD523B20912003C9280 /* Build configuration list for PBXNativeTarget "PintrestPinboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66725AD623B20912003C9280 /* Debug */,
+				66725AD723B20912003C9280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66725AD823B20912003C9280 /* Build configuration list for PBXNativeTarget "PintrestPinboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66725AD923B20912003C9280 /* Debug */,
+				66725ADA23B20912003C9280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66725AA023B20910003C9280 /* Project object */;
+}

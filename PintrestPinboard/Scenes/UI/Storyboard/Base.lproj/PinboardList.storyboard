@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Yo-sD-UGd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pinboard-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController restorationIdentifier="PinboardListViewController" storyboardIdentifier="PinboardListViewController" title="Pinboard" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="PinboardListViewController" customModule="PintrestPinboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Lz-2i-ZPt">
+                                <rect key="frame" x="0.0" y="83" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewLayout key="collectionViewLayout" id="F4F-De-4Nx" customClass="PinBoardCustomLayout" customModule="PintrestPinboard"/>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="KuO-OX-uFU"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="29e-1p-qLa"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Lz-2i-ZPt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="06m-9t-Avf"/>
+                            <constraint firstItem="3Lz-2i-ZPt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9Ya-24-acD"/>
+                            <constraint firstItem="3Lz-2i-ZPt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="39" id="IAW-V9-Btp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Lz-2i-ZPt" secondAttribute="bottom" constant="5" id="P7Q-z5-5yq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cvp-pc-1XJ"/>
+                    <connections>
+                        <outlet property="collectionView" destination="3Lz-2i-ZPt" id="L4v-Yc-Upn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="630" y="50"/>
+        </scene>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="0Iz-rg-tIs">
+            <objects>
+                <viewController restorationIdentifier="SplashScreenViewController" storyboardIdentifier="SplashScreenViewController" id="3Yo-sD-UGd" customClass="SplashScreenViewController" customModule="PintrestPinboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gTQ-Vn-APC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQs-a6-M9f">
+                                <rect key="frame" x="7" y="248" width="400" height="400"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="4sD-JQ-P2u"/>
+                                    <constraint firstAttribute="height" constant="400" id="MiI-8Y-WFx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CQs-a6-M9f" firstAttribute="centerY" secondItem="gTQ-Vn-APC" secondAttribute="centerY" id="FDS-ka-ruG"/>
+                            <constraint firstItem="CQs-a6-M9f" firstAttribute="centerX" secondItem="gTQ-Vn-APC" secondAttribute="centerX" id="N8o-JW-d4j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lBj-OS-x71"/>
+                    </view>
+                    <connections>
+                        <outlet property="splashAnimationView" destination="CQs-a6-M9f" id="8JM-Xu-cq5"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="pinboardSegue" id="w1l-Xz-v9Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sne-6r-f7q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-142.02898550724638" y="49.553571428571423"/>
+        </scene>
+    </scenes>
+</document>
