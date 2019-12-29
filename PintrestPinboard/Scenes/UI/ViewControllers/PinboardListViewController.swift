@@ -24,7 +24,7 @@ protocol PinboardListViewControllerProtocol {
     func registerCollectionViewCell()
 }
 
-class PinboardListViewController: UIViewController, PinboardListViewControllerProtocol {
+final class PinboardListViewController: UIViewController, PinboardListViewControllerProtocol {
 
     @IBOutlet weak var collectionView: UICollectionView!
     var pinItems: [PinboardItem] = []

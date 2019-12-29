@@ -18,7 +18,7 @@ protocol PinboardnImageDownloadServiceProtocol {
     func downloadPinImage(for identifier: String, from url: String, completion: @escaping ImageResponseResult)
 }
 
-class PinboardnImageDownloadService : PinboardnImageDownloadServiceProtocol {
+final class PinboardnImageDownloadService : PinboardnImageDownloadServiceProtocol {
     
     public var network: NetworkManagerProtocol = NetworkManager()
     

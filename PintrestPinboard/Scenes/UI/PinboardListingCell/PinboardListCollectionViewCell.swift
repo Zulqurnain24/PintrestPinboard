@@ -21,7 +21,7 @@ protocol PinboardListCollectionViewCellProtocol {
    func setImage(from data: Data, _ completionHandler: (() -> Void)?)
 }
 
-class PinboardListCollectionViewCell: UICollectionViewCell, PinboardListCollectionViewCellProtocol {
+final class PinboardListCollectionViewCell: UICollectionViewCell, PinboardListCollectionViewCellProtocol {
 
     @IBOutlet fileprivate weak var containerView: UIView!
     @IBOutlet fileprivate weak var imageView: UIImageView!

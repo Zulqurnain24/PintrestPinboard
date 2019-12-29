@@ -15,7 +15,7 @@ protocol PinBoardCustomLayoutDelegate: class {
 }
 
 /// Class that defines with the layout for collectionview
-class PinBoardCustomLayout: UICollectionViewLayout {
+final class PinBoardCustomLayout: UICollectionViewLayout {
     //Pinterest Layout Delegate
     weak var delegate: PinBoardCustomLayoutDelegate!
     

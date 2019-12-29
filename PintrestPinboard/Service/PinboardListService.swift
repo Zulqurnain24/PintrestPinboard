@@ -15,7 +15,7 @@ protocol PinboardListServiceProtocol {
     func cancelAllPendingRequest()
 }
 
-class PinboardListService : PinboardListServiceProtocol {
+final class PinboardListService : PinboardListServiceProtocol {
     
     public var network: NetworkManagerProtocol = NetworkManager()
     
